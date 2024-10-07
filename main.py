@@ -1,9 +1,35 @@
-# Teks yang akan dianalisis
-text = """Jalan jalan ke rumah mpok Atun. Rumah mpok Atun, ada di samping rumah bang Mandra.
-Tugas ketiga kita suruh nyari pantun. Yuk kita kumpulkan di Elena segera coba ini."""
+# Teks pantun yang akan dianalisis
+text = """Surya tenggelam ke barat
+Senja hati merah cahayanya
+Jika ingin dapat dunia akhirat
+Ilmu dan amal adalah kuncinya
+Kalau mau makan sukun
+Jangan lupa makan kedondong
+Kalau mau hidup rukun
+Jangan lupa tolong-menolong
+Merah muda baju si Bibi
+Di tangan ada bayam seikat
+Masalah warga datang bertubi-tubi
+Berkumpullah untuk mufakat
+Setelah makan menggosok gigi
+Gigi bersih nan putih pula
+Janganlah pelit untuk berbagi
+Membantu sesama bonus pahala
+Berbelanja ke Bu Satunah
+Buka pagi sampai malam
+Janganlah suka memfitnah
+Fitnah itu amat kejam
+Buah duku buah kedondong
+Enak rasanya dimakan bersama
+Jika engkau suka berbohong
+Sedih hati ayah dan bunda
+Ikan nila dimakan berang-berang
+Katak hijau melompat ke kiri
+Jika berada di rantau orang
+Baik-baik membawa diri"""
 
 # Langkah 1: Tokenisasi (memisahkan kata-kata)
-tokens = text.replace(".", "").replace(",", "").lower().split()
+tokens = text.replace("\n", " ").replace(",", "").replace(".", "").lower().split()
 
 # Inisialisasi dictionary untuk menyimpan frekuensi
 unigram_freq = {}
